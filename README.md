@@ -9,7 +9,10 @@ esto se da por que una gran cantidad de personas usan las hojas de calculo. Cuan
 pasos 
 1. primero vamos a descar la información en un archivo de excel 
 
-  if(!file.exist("data")) {
-    dir.create ("data")
+  if(!file.exist("data")) { #aqui lo que hacemos es revisar si el nombre ya existe
+    dir.create ("data")    # si no esxite, lo vamos a crear 
       }
+  datos_baltimore_camaras<- "https://data.baltimorecity.gov/Transportation/Baltimore-Fixed-Speed-Cameras/dz54-2aru#Download" # luego le agregamos un nombre al URL que vamos a usar 
   
+ download.file(fileUrl,destfile= ". /data/ cameras.xlsx",method = "curl"
+ 
