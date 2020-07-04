@@ -8,3 +8,8 @@ esto se da por que una gran cantidad de personas usan las hojas de calculo. Cuan
 ### ejemplo practico
 pasos 
 1. primero vamos a descar la información en un archivo de excel 
+
+  if(!file.exist("data")) {
+    dir.create ("data")
+      }
+  
